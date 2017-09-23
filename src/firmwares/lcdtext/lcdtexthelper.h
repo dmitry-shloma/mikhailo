@@ -74,13 +74,15 @@ void lcd_out_custom_char(const unsigned char *custom_ch, uint8_t id, uint8_t col
 
 /**
  * @brief lcd_out_value
- * @param pref
- * @param value
+ * @param pref text before output value
+ * @param value value for output
  * @param width
- * @param prec
- * @param suf NONE or "", DEGREE_C, DEGREE_F, DEGREE, RH
- * @param col
- * @param row
+ * @param prec precision, i.e. the number of digits after the decimal point (0 is no digit)
+ * @param suf text after output value. Allowable values: "NONE" or "" is empty, "DEGREE_C" is degree symbol 
+ * of Celsius, "DEGREE_F" is degree symbol of Fahrenheit, "DEGREE" is only degree symbol, "RH" is % for 
+ * relative humidity or use any value. e.g. "m/s"
+ * @param col column's id for output (from 0 to lcd's columns)
+ * @param row row's id for output (from 0 to lcd's rows)
  */
 void lcd_out_value(const char *pref, float value, char width, uint8_t prec, const char *suf, uint8_t col, uint8_t row) {
     // INFO: due to some performance reasons %f is not included in the Arduino's implementation of sprintf().
@@ -119,7 +121,7 @@ void lcd_out_value(const char *pref, float value, char width, uint8_t prec, cons
 }
 
 /**
- * @brief lcd_clear
+ * @brief lcd_clear clear lcd
  */
 void lcd_clear() {
     lcd_.clear();
