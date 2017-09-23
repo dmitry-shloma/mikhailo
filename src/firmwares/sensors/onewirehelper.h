@@ -36,7 +36,7 @@ void onewire_addr_to_str(unsigned char *addr, char *str)
     for(uint8_t i = 0; i < 8; ++i) {
         sprintf(str, "%02X", addr[i]);
         str+=2;
-    }
+    }    
 }
 
 float onewire_get_temperature(unsigned char *addr, MODE mode)
@@ -49,7 +49,7 @@ float onewire_get_temperature(unsigned char *addr, MODE mode)
     onewire.select(addr);
     onewire.write(0x44);
 
-    delay(ONE_SEC); // maybe 750ms is enough ?
+    delay(ONE_SEC); // maybe 750ms is enough?
 
     onewire.reset();
     onewire.select(addr);
@@ -77,12 +77,8 @@ float onewire_get_temperature(unsigned char *addr, MODE mode)
         }
     }
 
-    if (mode == C) {
-        return raw / 16.0;
-    }
-    
-    // mode == F
-    return raw / 16.0 * 1.8 + 32.0;
+    // if the mode is not Celsius, then it is a Fahrenheit
+    return (mode == C) ? raw / 16.0 : raw / 16.0 * 1.8 + 32.0;
 }
 
 #endif // ONEWIREHELPER_H
