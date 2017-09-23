@@ -1,5 +1,3 @@
-#include <string.h>
-
 #include "onewirehelper.h"
 #include "hih4000helper.h"
 #include "lcdtexthelper.h"
@@ -27,7 +25,9 @@ void loop()
         onewire_addr_to_str(addrv[i], str);
         str[16] = ':';
         str[17] = ' ';
-        str[18] = '\0';
+        // str[18] is already '\0';
+
+        // memcpy(&str[16], ": ", 2); // don't use this, because it requires 7942, instead of 7934 bytes
                 
         lcd_clear();
         float t = onewire_get_temperature(addrv[i], C);
