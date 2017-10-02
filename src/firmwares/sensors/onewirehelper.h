@@ -1,3 +1,14 @@
+/****************************************************************************
+**
+** Copyright (C) 2017 Dmitry Shloma
+** Contact: http://www.cpp-training.ru
+**
+** This file is part of the Mikhailo's project and wraps from 
+** OneWire's library the following functions : LiquidCrystal(), begin(), 
+** clear(), write() in use with createChar() , print(), createChar(). 
+** To the other functions, you can access using the object lcd_
+****************************************************************************/
+
 #ifndef ONEWIREHELPER_H
 #define ONEWIREHELPER_H
 
