@@ -58,58 +58,58 @@ void lcd_out_text(const char *str, uint8_t col, uint8_t row) {
 }
 
 /**
- * @brief lcd_out_custom_char function for output custom char to lcd
- * @param custom_ch custom char
- * @param id for a custom character (from 0 to 7)
- * @param col column's id for output (from 0 to lcd's columns)
- * @param row row's id for output (from 0 to lcd's rows)
+ * @brief lcd_out_custom_char - output custom char to lcd
+ * @param cch - custom char
+ * @param id - a custom char's id (from 0 to 7)
+ * @param col - column's id for output (from 0 to lcd's columns)
+ * @param row - row's id for output (from 0 to lcd's rows)
  */
-void lcd_out_custom_char(const unsigned char *custom_ch, uint8_t id, uint8_t col, uint8_t row) {
-    unsigned char custom_ch_[8] = {0};
-    memcpy(custom_ch_, custom_ch, 8);
-    lcd_.createChar(id, custom_ch_);
+void lcd_out_custom_char(const unsigned char *cch, uint8_t id, uint8_t col, uint8_t row) {
+    unsigned char cch_[8] = {0};
+    memcpy(cch_, cch, 8);
+    lcd_.createChar(id, cch_);
     lcd_.setCursor(col, row);
     lcd_.write(id);
 }
 
 /**
  * @brief lcd_out_value
- * @param pref text before output value
- * @param value value for output
- * @param width
- * @param prec precision, i.e. the number of digits after the decimal point (0 is no digit)
- * @param suf text after output value. Allowable values: "NONE" or "" is empty, "DEGREE_C" is degree symbol 
- * of Celsius, "DEGREE_F" is degree symbol of Fahrenheit, "DEGREE" is only degree symbol, "RH" is % for 
- * relative humidity or use any value. e.g. "m/s"
- * @param col column's id for output (from 0 to lcd's columns)
- * @param row row's id for output (from 0 to lcd's rows)
+ * @param pref - text before output value
+ * @param val - value for output
+ * @param width - width of text
+ * @param prec - precision, i.e. the number of digits after the decimal point (0 is no digit)
+ * @param suf - text after output value. Allowable values: "NONE" or "" is empty, "DSC" is degree symbol 
+ * of Celsius, "DSF" is degree symbol of Fahrenheit, "DS" is only degree symbol, "RH" is % for 
+ * relative humidity or use any value, e.g. "m/s"
+ * @param col - column's id for output (from 0 to lcd's columns)
+ * @param row - row's id for output (from 0 to lcd's rows)
  */
-void lcd_out_value(const char *pref, float value, char width, uint8_t prec, const char *suf, uint8_t col, uint8_t row) {
+void lcd_out_value(const char *pref, float val, char width, uint8_t prec, const char *suf, uint8_t col, uint8_t row) {
     // INFO: due to some performance reasons %f is not included in the Arduino's implementation of sprintf().
     // A better option would be to use dtostrf(), than used sprintf().
     // https://stackoverflow.com/questions/27651012
 
     // NOTE: dynamic memory allocation is not always better than static :)
-    char value_str[lcd_cols_] = ""; // the maximum width of, what can be displayed on the screen
-    dtostrf(value, width, prec, value_str);
+    char s_val[lcd_cols_] = ""; // the maximum width of, what can be displayed on the screen
+    dtostrf(val, width, prec, s_val);
 
     bool is_degree = false;
     char buf [lcd_cols_] = ""; // the maximum width of, what can be displayed on the screen
-    if (strcmp(suf, "DEGREE_C") == 0) {
+    if (strcmp(suf, "DSC") == 0) {
         is_degree = true;
-        sprintf(buf, "%s%s C", pref, value_str);
-    } else if (strcmp(suf, "DEGREE_F") == 0) {
+        sprintf(buf, "%s%s C", pref, s_val);
+    } else if (strcmp(suf, "DSF") == 0) {
         is_degree = true;
-        sprintf(buf, "%s%s F", pref, value_str);
-    } else if (strcmp(suf, "DEGREE") == 0) {
+        sprintf(buf, "%s%s F", pref, s_val);
+    } else if (strcmp(suf, "DS") == 0) {
         is_degree = true;
-        sprintf(buf, "%s%s  ", pref, value_str); // two spaces in this "%s%s  " are very important
+        sprintf(buf, "%s%s  ", pref, s_val); // two spaces in this "%s%s  " are very important
     } else if (strcmp(suf, "RH") == 0) {
-        sprintf(buf, "%s%s%%", pref, value_str);
+        sprintf(buf, "%s%s%%", pref, s_val);
     } else if (strcmp(suf, "NONE") == 0 || strcmp(suf, "") == 0) {
-        sprintf(buf, "%s%s", pref, value_str);
+        sprintf(buf, "%s%s", pref, s_val);
     } else {
-        sprintf(buf, "%s%s%s", pref, value_str, suf);
+        sprintf(buf, "%s%s%s", pref, s_val, suf);
     }
     
     lcd_out_text(buf, col, row);
