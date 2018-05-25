@@ -15,9 +15,6 @@
 #include <OneWire.h>
 #include <string.h>
 
-// 1-Wire pin's
-#define ONEWIRE_PIN 2
-
 #define ONE_SEC 1000
 
 void onewire_enum_avaliable_devices(uint8_t *addrc, unsigned char addrv[][8]);
@@ -26,7 +23,8 @@ void onewire_addr_to_str(unsigned char *addr, char *str);
 enum MODE {C, F};
 float onewire_get_temperature(unsigned char *addr, MODE mode);
 
-OneWire onewire(ONEWIRE_PIN);
+extern const uint8_t onewire_pin;
+OneWire onewire(onewire_pin);
 
 void onewire_enum_avaliable_devices(uint8_t *addrc, unsigned char addrv[][8])
 {

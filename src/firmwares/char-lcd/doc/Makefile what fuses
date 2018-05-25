@@ -1,0 +1,37 @@
+﻿MCU = atmega8
+CLOCK = 16000000
+PROGRAMMER = usbasp
+TARGET = main
+CC = avr-gcc
+OBJCOPY = avr-objcopy
+
+SOURCES = main.c
+
+OBJECTS = $(SOURCES:.c=.o)
+
+ifeq ($(OS),Windows_NT)
+	DEL_FILE = del
+else # Linux
+    	DEL_FILE = rm -f
+endif
+
+:attiny85 fuses
+FUSES = -U lfuse:w:0x62:m -U hfuse:w:0xdf:m -U efuse:w:0xff:m
+
+AVRDUDE = avrdude -c $(PROGRAMMER) -p $(MCU)
+CC = avr-gcc -Wall -Os -DF_CPU=$(CLOCK) -mmcu=$(MCU)
+
+:install
+$(AVRDUDE) -U flash:w:main.hex:i
+$(AVRDUDE) $(FUSES)
+
+
+#main.hex: main.elf
+#    rm -f main.hex
+#    avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+#    avr-size --format=avr --mcu=$(DEVICE) main.elf
+## If you have an EEPROM section, you must also create a hex file for the
+## EEPROM and add it to the "flash" target.
+
+cpp:
+    $(COMPILE) main.c

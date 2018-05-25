@@ -1,0 +1,822 @@
+From: =?utf-8?B?0KHQvtGF0YDQsNC90LXQvdC+IFdpbmRvd3MgSW50ZXJuZXQgRXhwbG8=?=
+	=?utf-8?B?cmVyIDk=?=
+Subject: =?utf-8?B?0JTRgNCw0LnQstC10YAg0LTQu9GPINGB0LjQvNCy0L7Qu9GM0L3QvtCz0L4g0Lw=?=
+	=?utf-8?B?0L7QtNGD0LvRjyDRgtC40L/QsCBEVjE2MTAw?=
+Date: Wed, 24 Oct 2012 19:08:22 +0700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://eugenemcu.ucoz.ru/common/dv1610driver.htm
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>=D0=94=D1=80=D0=B0=D0=B9=D0=B2=D0=B5=D1=80 =
+=D0=B4=D0=BB=D1=8F =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE =
+=D0=BC=D0=BE=D0=B4=D1=83=D0=BB=D1=8F =D1=82=D0=B8=D0=BF=D0=B0 =
+DV16100</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DCONTENT-TYPE>
+<META name=3DGENERATOR content=3D"MSHTML 9.00.8112.16450">
+<META name=3DAUTHOR content=3D"Eugene Eugene">
+<META name=3DCREATED content=3D20090127;20462079>
+<META name=3DCHANGEDBY content=3D"Eugene Eugene">
+<META name=3DCHANGED content=3D20090128;18083128>
+<META name=3DCLASSIFICATION =
+content=3D"=D0=9F=D1=80=D0=BE=D0=B3=D1=80=D0=B0=D0=BC=D0=BC=D0=B8=D1=80=D0=
+=BE=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5 =
+=D0=BC=D0=B8=D0=BA=D1=80=D0=BE=D0=BA=D0=BE=D0=BD=D1=82=D1=80=D0=BE=D0=BB=D0=
+=BB=D0=B5=D1=80=D0=BE=D0=B2, AVR">
+<META name=3DDESCRIPTION=20
+content=3D"=D0=98=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=8B=D0=B9 =
+=D0=BA=D0=BE=D0=B4 =D0=BD=D0=B0 =D0=A1=D0=B8 =
+=D0=B4=D1=80=D0=B0=D0=B9=D0=B2=D0=B5=D1=80=D0=B0 =
+=D0=BC=D0=BE=D0=B4=D1=83=D0=BB=D1=8F =D1=82=D0=B8=D0=BF=D0=B0 DV16100 (1 =
+=D1=81=D1=82=D1=80=D0=BE=D0=BA=D0=B0, 16 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=BE=D0=B2) =D0=B4=D0=BB=D1=8F =
+Atmega16. =D0=A8=D0=B8=D0=BD=D0=B0 - 4 =
+=D0=B1=D0=B8=D1=82=D0=B0.=D0=92=D1=8B=D0=B2=D0=BE=D0=B4 =
+=D1=81=D1=82=D0=B0=D0=BD=D0=B4=D0=B0=D1=80=D1=82=D0=BD=D1=8B=D1=85 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=BE=D0=B2 =
+=D1=81=D0=BE=D0=B3=D0=BB=D0=B0=D1=81=D0=BD=D0=BE ACSII. =
+=D0=92=D1=8B=D0=B2=D0=BE=D0=B4 =
+=D0=B7=D0=B0=D0=B4=D0=B0=D0=B2=D0=B0=D0=B5=D0=BC=D1=8B=D1=85 =
+=D0=BF=D0=BE=D0=BB=D1=8C=D0=B7=D0=BE=D0=B2=D0=B0=D1=82=D0=B5=D0=BB=D0=B5=D0=
+=BC =D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=BE=D0=B2.&#10;">
+<META name=3DKEYWORDS=20
+content=3D"driver, DV16100, =
+=D0=B8=D0=BD=D0=B8=D1=86=D0=B8=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=D1=86=D0=B8=D1=
+=8F, =D0=B4=D1=80=D0=B0=D0=B9=D0=B2=D0=B5=D1=80 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE =
+=D0=96=D0=9A-=D0=BC=D0=BE=D0=B4=D1=83=D0=BB=D1=8F, LCD">
+<STYLE type=3Dtext/css>@page  {size: 3.5cm 2.5cm; }
+</STYLE>
+</HEAD>
+<BODY dir=3Dltr lang=3Dru-RU bgColor=3D#c0c0c0>
+<DL>
+  <DD style=3D"MARGIN-LEFT: 1.5cm"><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%"><A=20
+  href=3D"http://eugenemcu.ucoz.ru/">//</A><A=20
+  =
+href=3D"http://eugenemcu.ucoz.ru/">http://eugenemcu.ucoz.ru/</A></SPAN></=
+SPAN></SPAN></FONT></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%"></SPAN>&nbsp;
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">#define EN=20
+  =
+3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =D0=A1=D1=82=D1=80=D0=BE=D0=B1, =
+=D1=81=D0=BE=D0=BF=D1=80=D0=BE=D0=B2=D0=BE=D0=B6=D0=B4=D0=B0=D1=8E=D1=89=D0=
+=B8=D0=B9 =D1=81=D0=B8=D0=B3=D0=BD=D0=B0=D0=BB=D1=8B =D0=BD=D0=B0 =
+=D1=88=D0=B8=D0=BD=D0=B5=20
+  =
+"=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D1=8B/=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=
+=D0=B5"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+</FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">#define RS=20
+  =
+2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =D0=A1=D0=B8=D0=B3=D0=BD=D0=B0=D0=BB =
+=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D0=B0/=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=
+=D0=B5. 1 - =D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=D0=B5; 0 =E2=80=93=20
+  =
+=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D0=B0.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%"></SPAN>&nbsp;
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">// =
+=D0=9F=D1=80=D0=BE=D1=82=D0=BE=D1=82=D0=B8=D0=BF=D1=8B=20
+  =D1=84=D1=83=D0=BD=D0=BA=D1=86=D0=B8=D0=B9.</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void=20
+  INI_LCD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+(void);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+<FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN lang=3Dru-RU><SPAN=20
+  style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<=
+/SPAN></SPAN></SPAN></FONT><FONT=20
+  color=3D#003366>/ =
+=D0=98=D0=BD=D0=B8=D1=86=D0=B8=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=D1=86=D0=B8=D1=
+=8F LCD.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void =
+LCD_CMD &nbsp;=20
+  (char=20
+  =
+CMD);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=9F=D0=B5=D1=80=D0=B5=D0=B4=D0=B0=D1=87=D0=B0 =
+=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D1=8B </FONT><FONT=20
+  color=3D#003366>LCD</FONT><FONT =
+color=3D#003366>.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void=20
+  LCD_DAT&nbsp;&nbsp;&nbsp; (char=20
+  =
+DAT);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+  <FONT color=3D#003366>// =D0=97=D0=B0=D0=BF=D0=B8=D1=81=D1=8C =
+=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=D1=85 =D0=B2 =
+LCD.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void=20
+  LCD_VIEW&nbsp;&nbsp; (char ADR_DDRAM, char=20
+  =
+DAT);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FON=
+T=20
+  color=3D#003366>// =
+=D0=9E=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B5=D0=BD=D0=B8=D0=B5 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=B0 </FONT><FONT=20
+  color=3D#003366>DAT</FONT><FONT color=3D#003366> =D0=BF=D0=BE =
+=D0=B0=D0=B4=D1=80=D0=B5=D1=81=D1=83 </FONT><FONT=20
+  color=3D#003366>ADR</FONT><FONT color=3D#003366>_</FONT><FONT=20
+  color=3D#003366>DDRAM</FONT><FONT =
+color=3D#003366>.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void =
+DELAY_MS (int=20
+  =
+Xms);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></SPAN></FONT></FONT>&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;</SPAN></SPAN></SPAN></FONT></FONT>&nbsp;/<FONT=20
+  color=3D#003366>/ =D0=97=D0=B0=D0=B4=D0=B5=D1=80=D0=B6=D0=BA=D0=B0 =
+=D0=BD=D0=B0 Xms =
+=D0=BC=D0=B8=D0=BB=D0=BB=D0=B8=D1=81=D0=B5=D0=BA=D1=83=D0=BD=D0=B4.</FONT=
+></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void&nbsp;=20
+  =
+NEW_SIMB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  (char ADR_DDRAM, char Y1,char Y2,char Y3,char Y4,char Y5,char Y6,char =
+Y7,char=20
+  Y8);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%"></SPAN>&nbsp;
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void =
+INI_LCD (void)=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></SPAN></FONT></FONT>&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=98=D0=BD=D0=B8=D1=86=D0=B8=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=D1=86=D0=B8=D1=
+=8F LCD.</FONT><FONT=20
+  color=3D#333399>&nbsp;&nbsp;=20
+  =
+</FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">{</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>DDRA=3D0xFF;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;=20
+  <FONT color=3D#003366>// =D0=9F=D0=BE=D1=80=D1=82 A =D0=BD=D0=B0 =
+=D0=B2=D1=8B=D1=85=D0=BE=D0=B4.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>DELAY_MS=20
+  =
+(5);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=97=D0=B0=D0=B4=D0=B5=D1=80=D0=B6=D0=BA=D0=B0 =
+=D0=BF=D0=B5=D1=80=D0=B5=D0=B4 =
+=D0=B8=D0=BD=D0=B8=D1=86=D0=B8=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=D1=86=D0=B8=D0=
+=B5=D0=B9=20
+  LCD.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_CMD=20
+  =
+(0x02);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;=20
+  <FONT color=3D#003366>// =D0=A8=D0=B8=D0=BD=D0=B0 4 =
+=D0=B1=D0=B8=D1=82. (LCD =D0=BF=D0=BE=D0=BA=D0=B0 =D0=B2 =
+=D1=80=D0=B5=D0=B6=D0=B8=D0=BC=D0=B5 8=20
+  =D0=B1=D0=B8=D1=82).</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_CMD=20
+  =
+(0x28);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;=20
+  <FONT color=3D#003366>// =D0=A8=D0=B8=D0=BD=D0=B0 4 =
+=D0=B1=D0=B8=D1=82, 2 =D1=81=D1=82=D1=80=D0=BE=D0=BA=D0=B8, 5*8=20
+  =
+=D0=BF=D0=B8=D0=BA=D1=81=D0=B5=D0=BB=D0=B5=D0=B9.</FONT></SPAN></FONT></F=
+ONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_CMD=20
+  =
+(0x0C);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;=20
+  <FONT color=3D#003366>// =
+=D0=92=D0=BA=D0=BB=D1=8E=D1=87=D0=B8=D1=82=D1=8C =
+=D0=BE=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B5=D0=BD=D0=B8=D0=B5, =
+=D0=B2=D1=8B=D0=BA=D0=BB=D1=8E=D1=87=D0=B8=D1=82=D1=8C=20
+  =D0=BA=D1=83=D1=80=D1=81=D0=BE=D1=80.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_CMD=20
+  =
+(0x01);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=9E=D1=87=D0=B8=D1=81=D1=82=D0=B8=D1=82=D1=8C =
+=D0=B4=D0=B8=D1=81=D0=BF=D0=BB=D0=B5=D0=B9.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">}</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void=20
+  LCD_CMD&nbsp;&nbsp; (char CMD)=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></SPAN></FONT></FONT>&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=9F=D0=B5=D1=80=D0=B5=D0=B4=D0=B0=D1=87=D0=B0 =
+=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D1=8B =
+LCD.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">{=20
+  </SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA=3D=20
+  =
+((CMD&amp;0xF0)|(1&lt;&lt;EN));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =D0=92=D1=8B=D0=B4=D0=B0=D1=82=D1=8C =
+=D1=81=D1=82=D0=B0=D1=80=D1=88=D1=83=D1=8E =
+=D1=82=D0=B5=D1=82=D1=80=D0=B0=D0=B4=D1=83 =
+=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D1=8B, RS=3D0,=20
+  EN=3D1.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA &amp;=3D=20
+  =
+~(1&lt;&lt;EN);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// EN=3D0.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA=3D=20
+  =
+((CMD&lt;&lt;4)&amp;0xF0)|(1&lt;&lt;EN);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =D0=92=D1=8B=D0=B4=D0=B0=D1=82=D1=8C =
+=D0=BC=D0=BB=D0=B0=D0=B4=D1=88=D1=83=D1=8E =
+=D1=82=D0=B5=D1=82=D1=80=D0=B0=D0=B4=D1=83 =
+=D0=BA=D0=BE=D0=BC=D0=B0=D0=BD=D0=B4=D1=8B, RS=3D0,=20
+  EN=3D1.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA &amp;=3D ~(1&lt;&lt;EN);=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// EN=3D0.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>DELAY_MS (3);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">}</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void=20
+  LCD_DAT&nbsp;&nbsp;&nbsp; (char DAT)=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></SPAN></FONT></FONT>&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#333399>// =D0=97=D0=B0=D0=BF=D0=B8=D1=81=D1=8C =
+=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=D1=85 =D0=B2 =
+LCD.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA=3D((DAT&amp;0xF0)|(1&lt;&lt;RS))|(1&lt;&lt;EN);&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// </FONT><FONT =
+color=3D#003366>=D0=92=D1=8B=D0=B4=D0=B0=D1=82=D1=8C</FONT><FONT=20
+  color=3D#003366> </FONT><FONT =
+color=3D#003366>=D1=81=D1=82=D0=B0=D1=80=D1=88=D1=83=D1=8E</FONT><FONT =
+color=3D#003366>=20
+  </FONT><FONT =
+color=3D#003366>=D1=82=D0=B5=D1=82=D1=80=D0=B0=D0=B4=D1=83</FONT><FONT =
+color=3D#003366> </FONT><FONT=20
+  color=3D#003366>=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=D1=85</FONT><FONT =
+color=3D#003366>, RS=3D1,=20
+  EN=3D1.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA &amp;=3D=20
+  =
+~(1&lt;&lt;EN);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// EN=3D0.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>PORTA=3D((DAT&lt;&lt;4)&amp;0xF0)|(1&lt;&lt;RS)|(1&lt;&lt;EN);&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;=20
+  <FONT color=3D#003366>// </FONT><FONT =
+color=3D#003366>=D0=92=D1=8B=D0=B4=D0=B0=D1=82=D1=8C</FONT><FONT=20
+  color=3D#003366> </FONT><FONT =
+color=3D#003366>=D0=BC=D0=BB=D0=B0=D0=B4=D1=88=D1=83=D1=8E</FONT><FONT =
+color=3D#003366>=20
+  </FONT><FONT =
+color=3D#003366>=D1=82=D0=B5=D1=82=D1=80=D0=B0=D0=B4=D1=83</FONT><FONT =
+color=3D#003366> </FONT><FONT=20
+  color=3D#003366>=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=D1=85</FONT><FONT =
+color=3D#003366>, RS=3D1,=20
+  EN=3D1.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>PORTA &amp;=3D ~(1&lt;&lt;EN);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>DELAY_MS (1);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">}</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void =
+LCD_VIEW (char=20
+  ADR_DDRAM, char DAT)=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU><SPAN style=3D"TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></SPAN></FONT></FONT>&nbsp;&nbs=
+p;=20
+  <FONT color=3D#003366>// =
+=D0=9E=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B5=D0=BD=D0=B8=D0=B5 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=B0 DAT =D0=BF=D0=BE =
+=D0=B0=D0=B4=D1=80=D0=B5=D1=81=D1=83=20
+  ADR_DDRAM.</FONT><FONT color=3D#333399> </FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">{</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt" size=3D2>if=20
+  (ADR_DDRAM&gt;7) ADR_DDRAM=3DADR_DDRAM-8+64;<FONT=20
+  color=3D#008080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT><FONT=20
+  color=3D#003366>// </FONT><FONT =
+color=3D#003366>=D0=9F=D0=B5=D1=80=D0=B5=D1=85=D0=BE=D0=B4</FONT><FONT =
+color=3D#003366>=20
+  </FONT><FONT color=3D#003366>=D0=BD=D0=B0</FONT><FONT color=3D#003366> =
+</FONT><FONT=20
+  color=3D#003366>=D0=BD=D0=BE=D0=B2=D1=83=D1=8E</FONT><FONT =
+color=3D#003366> </FONT><FONT=20
+  color=3D#003366>=D1=81=D1=82=D1=80=D0=BE=D0=BA=D1=83</FONT><FONT =
+color=3D#003366>.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_CMD=20
+  =
+(ADR_DDRAM|(1&lt;&lt;7));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;=20
+  <FONT color=3D#003366>// =
+=D0=A3=D1=81=D1=82=D0=B0=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D1=8C =
+=D0=B0=D0=B4=D1=80=D0=B5=D1=81 =D0=B4=D0=BB=D1=8F =
+=D0=BE=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B5=D0=BD=D0=B8=D1=8F =
+=D0=B2=20
+  DDRAM.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>LCD_DAT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;=20
+  =
+(DAT);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=9E=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B7=D0=B8=D1=82=D1=8C =
+=D0=B4=D0=B0=D0=BD=D0=BD=D1=8B=D0=B5.&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+</FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">}</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">/*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  =D0=9E=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B5=D0=BD=D0=B8=D0=B5 =
+=D0=BF=D1=80=D0=BE=D0=B8=D0=B7=D0=B2=D0=BE=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=
+=BE=20
+  =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=B0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  */</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">void =
+NEW_SIMB (char=20
+  ADR_DDRAM, char Y1,char Y2,char Y3,char Y4,char Y5,char Y6,char =
+Y7,char=20
+  Y8)</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">{</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% 0%">&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>ADR_DDRAM=3DADR_DDRAM&lt;&lt;3;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =
+=D0=92=D1=8B=D1=87=D0=B8=D1=81=D0=BB=D1=8F=D0=B5=D0=BC =
+=D0=B0=D0=B4=D1=80=D0=B5=D1=81 =D0=B2 </FONT><FONT=20
+  color=3D#003366>CGRAM</FONT><FONT color=3D#003366>=3D</FONT><FONT=20
+  color=3D#003366>ADR</FONT><FONT color=3D#003366>_</FONT><FONT=20
+  color=3D#003366>DDRAM</FONT><FONT =
+color=3D#003366>*8.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_CMD=20
+  =
+(ADR_DDRAM|(1&lt;&lt;6));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;=20
+  <FONT color=3D#003366>// =
+=D0=A3=D1=81=D1=82=D0=B0=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D1=8C =
+=D0=B0=D0=B4=D1=80=D0=B5=D1=81 =D0=B4=D0=BB=D1=8F =
+=D0=B7=D0=B0=D0=BF=D0=B8=D1=81=D0=B8 =D0=B2=20
+  CGRAM.</FONT></SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y1);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y2);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y3);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y4);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y5);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y6);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y7);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>LCD_DAT (Y8);</SPAN></FONT></FONT>
+  <DD style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: none"><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">}</SPAN></FONT></FONT>
+  <DD=20
+style=3D"MARGIN-LEFT: 1.5cm; TEXT-DECORATION: =
+none"><BR></DD></DL></BODY></HTML>

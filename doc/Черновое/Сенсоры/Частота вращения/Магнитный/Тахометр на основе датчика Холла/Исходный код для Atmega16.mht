@@ -1,0 +1,1083 @@
+From: =?utf-8?B?0KHQvtGF0YDQsNC90LXQvdC+IFdpbmRvd3MgSW50ZXJuZXQgRXhwbG8=?=
+	=?utf-8?B?cmVyIDk=?=
+Subject: =?utf-8?B?0JjRgdGF0L7QtNC90YvQuSDQutC+0LQg0LTQu9GPIEF0bWVnYTE2INGG0Lg=?=
+	=?utf-8?B?0YTRgNC+0LLQvtC5INGC0LDRhdC+0LzQtdGC0YAsINC40LfQvNC10YDQtdC90Lg=?=
+	=?utf-8?B?0LUg0YfQsNGB0YLQvtGC0Ysu?=
+Date: Wed, 24 Oct 2012 19:08:11 +0700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://eugenemcu.ru/tahometr/tahometr_code.html
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>=D0=98=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=8B=D0=B9 =
+=D0=BA=D0=BE=D0=B4 =D0=B4=D0=BB=D1=8F Atmega16 =
+=D1=86=D0=B8=D1=84=D1=80=D0=BE=D0=B2=D0=BE=D0=B9 =
+=D1=82=D0=B0=D1=85=D0=BE=D0=BC=D0=B5=D1=82=D1=80, =
+=D0=B8=D0=B7=D0=BC=D0=B5=D1=80=D0=B5=D0=BD=D0=B8=D0=B5 =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D1=8B.</TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DCONTENT-TYPE>
+<META name=3DGENERATOR content=3D"MSHTML 9.00.8112.16450">
+<META name=3DAUTHOR content=3D"Eugene Eugene">
+<META name=3DCREATED content=3D20090127;20462079>
+<META name=3DCHANGEDBY content=3D"Eugene Eugene">
+<META name=3DCHANGED content=3D20090128;17381729>
+<META name=3DCLASSIFICATION =
+content=3D"=D0=9F=D1=80=D0=BE=D0=B3=D1=80=D0=B0=D0=BC=D0=BC=D0=B8=D1=80=D0=
+=BE=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5 =
+=D0=BC=D0=B8=D0=BA=D1=80=D0=BE=D0=BA=D0=BE=D0=BD=D1=82=D1=80=D0=BE=D0=BB=D0=
+=BB=D0=B5=D1=80=D0=BE=D0=B2, AVR">
+<META name=3DDESCRIPTION=20
+content=3D"=D0=98=D1=81=D1=85=D0=BE=D0=B4=D0=BD=D1=8B=D0=B9 =
+=D0=BA=D0=BE=D0=B4 =D0=BD=D0=B0 =D0=A1=D0=B8 =D0=B4=D0=BB=D1=8F Atmega16 =
+=D0=B4=D0=BB=D1=8F =
+=D1=86=D0=B8=D1=84=D1=80=D0=BE=D0=B2=D0=BE=D0=B3=D0=BE =
+=D1=82=D0=B0=D1=85=D0=BE=D0=BC=D0=B5=D1=82=D1=80=D0=B0.&#10;=D0=98=D0=B7=D0=
+=BC=D0=B5=D1=80=D1=8F=D0=B5=D1=82 =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D1=83 =
+=D1=81=D0=B8=D0=B3=D0=BD=D0=B0=D0=BB=D0=B0 =D1=81 =
+=D0=B4=D0=B0=D1=82=D1=87=D0=B8=D0=BA=D0=B0 =
+=D0=A5=D0=BE=D0=BB=D0=BB=D0=B0 =D0=B8 =
+=D0=B2=D1=8B=D0=B2=D0=BE=D0=B4=D0=B8=D1=82 =D0=BD=D0=B0 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D1=8C=D0=BD=D1=8B=D0=B9 =
+=D0=B6=D0=BA-=D0=BC=D0=BE=D0=B4=D1=83=D0=BB=D1=8C =
+=D1=82=D0=B8=D0=BF=D0=B0 DV16100 (1 =
+=D1=81=D1=82=D1=80=D0=BE=D0=BA=D0=B0, 16 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D0=BE=D0=B2)&#10;">
+<META name=3DKEYWORDS=20
+content=3D"driver, DV16100, =
+=D0=B8=D0=BD=D0=B8=D1=86=D0=B8=D0=B0=D0=BB=D0=B8=D0=B7=D0=B0=D1=86=D0=B8=D1=
+=8F, =D0=B4=D1=80=D0=B0=D0=B9=D0=B2=D0=B5=D1=80 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE =
+=D0=96=D0=9A-=D0=BC=D0=BE=D0=B4=D1=83=D0=BB=D1=8F, LCD"></HEAD>
+<BODY dir=3Dltr lang=3Dru-RU bgColor=3D#c0c0c0>
+<DL>
+  <DD><A href=3D"http://eugenemcu.ucoz.ru/"><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US><SPAN style=3D"BACKGROUND: none transparent scroll repeat =
+0% 0%">//=20
+  </SPAN></SPAN></FONT></FONT></FONT></A><A=20
+  href=3D"http://eugenemcu.ucoz.ru/"><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  style=3D"BACKGROUND: none transparent scroll repeat 0% =
+0%">http://eugenemcu.ucoz.ru</SPAN></FONT></FONT></FONT></A>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>#include&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  &lt;inavr.h&gt;</FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>#include&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  &lt;iom16.h&gt;</FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>#</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  =
+lang=3Den-US>include</SPAN></FONT></FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>"</FONT></FONT><A=20
+  href=3D"http://eugenemcu.ucoz.ru/common/dv1610driver.htm"><FONT=20
+  color=3D#0000ff><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>dv</SPAN></FONT></FONT></FONT><FONT color=3D#0000ff><FONT =
+
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Dru-RU>16100.</SPAN></FONT></FONT></FONT><FONT =
+color=3D#0000ff><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>h</SPAN></FONT></FONT></FONT></A><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT> <FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=94=D1=80=D0=B0=D0=B9=D0=B2=D0=B5=D1=80 =
+=D1=81=D0=B8=D0=BC=D0=B2=D0=BE=D0=BB=D1=8C=D0=BD=D0=BE=D0=B3=D0=BE =
+</FONT></FONT></FONT><FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>LCD</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>-=D0=BC=D0=BE=D0=B4=D1=83=D0=BB=D1=8F=20
+  </FONT></FONT></FONT><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>DV</SPAN></FONT></FONT></FONT><FONT color=3D#003366><FONT =
+
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>16100.</FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>#define&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  LED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</FONT></FONT>
+  <DD>&nbsp;
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN=20
+  =
+lang=3Den-US>long&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;=20
+  SYS_FREQ =3D=20
+  =
+1000000;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  color=3D#003366>=D0=A2=D0=B0=D0=BA=D1=82=D0=BE=D0=B2=D0=B0=D1=8F =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D0=B0</FONT><FONT =
+color=3D#003366><SPAN=20
+  lang=3Den-US>.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned char&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Num1000;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  color=3D#003366>=D0=A0=D0=B0=D0=B7=D1=80=D1=8F=D0=B4 =
+=D1=82=D1=8B=D1=81=D1=8F=D1=87</FONT><FONT color=3D#003366><SPAN=20
+  lang=3Den-US>.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned char&nbsp;&nbsp;&nbsp;&nbsp; =
+Num100;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  color=3D#003366>=D0=A0=D0=B0=D0=B7=D1=80=D1=8F=D0=B4 =
+=D1=81=D0=BE=D1=82=D0=B5=D0=BD</FONT><FONT color=3D#003366><SPAN=20
+  lang=3Den-US>.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned char&nbsp;&nbsp;&nbsp;&nbsp; =
+Num10;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  color=3D#003366>=D0=A0=D0=B0=D0=B7=D1=80=D1=8F=D0=B4 =
+=D0=B4=D0=B5=D1=81=D1=8F=D1=82=D0=BA=D0=BE=D0=B2</FONT><FONT =
+color=3D#003366><SPAN=20
+  lang=3Den-US>.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned char&nbsp;&nbsp;&nbsp;&nbsp; =
+Num1;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  color=3D#003366>=D0=A0=D0=B0=D0=B7=D1=80=D1=8F=D0=B4 =
+=D0=B5=D0=B4=D0=B8=D0=BD=D0=B8=D1=86</FONT><FONT color=3D#003366><SPAN=20
+  lang=3Den-US>.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned char&nbsp;&nbsp;&nbsp;&nbsp; =
+Num01;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  color=3D#003366>=D0=A0=D0=B0=D0=B7=D1=80=D1=8F=D0=B4 =
+=D0=B4=D0=B5=D1=81=D1=8F=D1=82=D1=8B=D1=85</FONT><FONT =
+color=3D#003366><SPAN=20
+  lang=3Den-US>.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN=20
+  =
+lang=3Den-US>double</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <SPAN=20
+  =
+lang=3Den-US>FrqHz</SPAN>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>//</FONT> <FONT =
+color=3D#003366>=D0=A7=D0=B0=D1=81=D1=82=D0=BE=D1=82=D0=B0 =D0=B2=20
+  =D0=B3=D0=B5=D1=80=D1=86=D0=B0=D1=85.</FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN=20
+  =
+lang=3Den-US>double</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <SPAN lang=3Den-US>FrqMn</SPAN>;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>// =D0=A7=D0=B0=D1=81=D1=82=D0=BE=D1=82=D0=B0 =
+=D0=B2 =D0=BE=D0=B1/=D0=BC=D0=B8=D0=BD.</FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned</SPAN> <SPAN=20
+  lang=3Den-US>char</SPAN>&nbsp;&nbsp;&nbsp;&nbsp; <SPAN=20
+  =
+lang=3Den-US>FreqOk</SPAN>=3D1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>//</FONT> <FONT =
+color=3D#003366>=D0=9F=D1=80=D0=B8=D0=B7=D0=BD=D0=B0=D0=BA =
+=C2=AB=D0=9F=D0=BE=D0=BB=D1=83=D1=87=D0=B5=D0=BD=D0=BE =
+=D0=BD=D0=BE=D0=B2=D0=BE=D0=B5=20
+  =D0=B7=D0=BD=D0=B0=D1=87=D0=B5=D0=BD=D0=B8=D0=B5 =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D1=8B=C2=BB</FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>unsigned</SPAN> <SPAN=20
+  lang=3Den-US>long</SPAN>&nbsp;&nbsp;&nbsp;&nbsp; <SPAN=20
+  lang=3Den-US>Period</SPAN>=3D0<SPAN=20
+  =
+lang=3Den-US>xFFFFFFF</SPAN>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT color=3D#003366>//</FONT> <FONT =
+color=3D#003366>=D0=94=D0=BB=D0=B8=D1=82=D0=B5=D0=BB=D1=8C=D0=BD=D0=BE=D1=
+=81=D1=82=D1=8C =D0=BF=D0=B5=D1=80=D0=B8=D0=BE=D0=B4=D0=B0 =D0=B2=20
+  =D1=82=D0=B0=D0=BA=D1=82=D0=B0=D1=85 =
+=D1=82=D0=B0=D0=B9=D0=BC=D0=B5=D1=80=D0=B0.</FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN=20
+  =
+lang=3Den-US>union</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+  {<SPAN lang=3Den-US>unsigned</SPAN> <SPAN lang=3Den-US>int</SPAN> =
+<SPAN=20
+  lang=3Den-US>PRD</SPAN>0;&nbsp; <SPAN lang=3Den-US>unsigned</SPAN> =
+<SPAN=20
+  lang=3Den-US>char</SPAN> <SPAN =
+lang=3Den-US>PRD</SPAN>1[2];}&nbsp;&nbsp; <SPAN=20
+  lang=3Den-US>PRD</SPAN>;<FONT color=3D#003366> //</FONT> <FONT=20
+  =
+color=3D#003366>=D0=92=D1=81=D0=BF=D0=BE=D0=BC=D0=BE=D0=B3=D0=B0=D1=82=D0=
+=B5=D0=BB=D1=8C=D0=BD=D0=BE=D0=B5 =
+=D0=BE=D0=B1=D1=8A=D0=B5=D0=B4=D0=B8=D0=BD=D0=B5=D0=BD=D0=B8=D0=B5.</FONT=
+></FONT></FONT>
+  =
+<DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+
+  <DD>&nbsp;
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>void</SPAN> <SPAN lang=3Den-US>main</SPAN> =
+(<SPAN=20
+  lang=3Den-US>void</SPAN>)</FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>{ </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>INI</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>_</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>LCD</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=98=D0=BD=D0=B8=D1=86=D0=B8=D0=B0=D0=BB=D0=B8=D0=B7=D0=B8=D1=80=
+=D0=BE=D0=B2=D0=B0=D1=82=D1=8C </FONT></FONT></FONT><FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>LCD</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>DDRB</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> |=3D=20
+  (1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>LED</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>MCUCR</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> |=3D=20
+  (1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>ISC</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>00)|(1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>ISC</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>01);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=9F=D1=80=D0=B5=D1=80=D1=8B=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5&nbs=
+p; </FONT></FONT></FONT><FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>INT</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>0=20
+  =D1=84=D0=BE=D1=80=D0=BC=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D1=82=D1=8C =
+=D0=BF=D0=BE =D1=84=D1=80=D0=BE=D0=BD=D1=82=D1=83 =
+=D1=81=D0=B8=D0=B3=D0=BD=D0=B0=D0=BB=D0=B0.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>TCCR</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>1</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>B</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> |=3D=20
+  (1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>CS</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>10)|(1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>CS</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>11);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=A2=D0=B0=D0=BA=D1=82=D0=B8=D1=80=D0=BE=D0=B2=D0=B0=D1=82=D1=8C=
+ </FONT></FONT></FONT><FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>T</SPAN></FONT></FONT></FONT><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>0=20
+  =D1=81=D0=B8=D1=81=D1=82=D0=B5=D0=BC=D0=BD=D0=BE=D0=B9 =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D0=BE=D0=B9.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>GICR</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> |=3D=20
+  (1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>INT</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>0);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=A0=D0=B0=D0=B7=D1=80=D0=B5=D1=88=D0=B8=D1=82=D1=8C =
+=D0=BF=D1=80=D0=B5=D1=80=D1=8B=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5 =
+</FONT></FONT></FONT><FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>INT</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>0.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>GIFR</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> |=3D=20
+  (1&lt;&lt;</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>INTF</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>0);=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=A1=D0=B1=D1=80=D0=BE=D1=81=D0=B8=D1=82=D1=8C =
+=D1=84=D0=BB=D0=B0=D0=B3 </FONT></FONT></FONT><FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>INT</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>0.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>SREG</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> |=3D=20
+  =
+(1&lt;&lt;7);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=A0=D0=B0=D0=B7=D1=80=D0=B5=D1=88=D0=B8=D1=82=D1=8C =
+=D0=BF=D1=80=D0=B5=D1=80=D1=8B=D0=B2=D0=B0=D0=BD=D0=B8=D1=8F =D0=B2=20
+  =
+=D0=BF=D1=80=D0=BE=D0=B3=D1=80=D0=B0=D0=BC=D0=BC=D0=B5.</FONT></FONT></FO=
+NT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>while</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  (1)</FONT></FONT>
+  =
+<DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>{</FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>if</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2> (</FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>FreqOk</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>=3D=3D1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>=D0=95=D1=81=D0=BB=D0=B8 =
+=D0=BF=D0=BE=D0=BB=D1=83=D1=87=D0=B5=D0=BD=D0=BE =
+=D0=BD=D0=BE=D0=B2=D0=BE=D0=B5 =
+=D0=B7=D0=BD=D0=B0=D1=87=D0=B5=D0=BD=D0=B8=D0=B5=20
+  =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D1=8B=E2=80=A6</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>{</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  =
+lang=3Den-US>FrqMn=3D(60/(Period*64e-6));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>FrqHz=3DFrqMn/60;</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  color=3D#003366><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>// =
+=D0=92=D1=8B=D0=B4=D0=B5=D0=BB=D1=8F=D0=B5=D0=BC =
+=D0=B4=D0=B5=D1=81=D1=8F=D1=82=D0=B8=D1=87=D0=BD=D1=8B=D0=B5 =
+=D1=80=D0=B0=D0=B7=D1=80=D1=8F=D0=B4=D1=8B=20
+  =D1=87=D0=B8=D1=81=D0=BB=D0=B0.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>Num</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>100=3D</FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>Num</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>10=3D</FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>Num</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>1=3D</FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>Num</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>01=3D0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  (</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>&gt;=3D100)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  {</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>Num</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>100++;&nbsp; </FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> -=3D 100;}=20
+  </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  (</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>&gt;=3D10)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;=20
+  {</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>Num</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>10++;&nbsp;&nbsp; </FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> -=3D 10;}=20
+  </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  (</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>&gt;=3D1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  {</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>Num</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>1++;&nbsp;&nbsp;&nbsp; </FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> -=3D=20
+  1;}</FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  (</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>&gt;=3D0.1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;=20
+  {</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>Num</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>01++;&nbsp;&nbsp; </FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>FrqHz</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2> -=3D=20
+  0.1;}</FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>_</FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>VIEW</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>(7,'</FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>z</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>');&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=9E=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B0=D0=B5=D0=BC =
+=D1=87=D0=B0=D1=81=D1=82=D0=BE=D1=82=D1=83 =D0=BD=D0=B0=20
+  </FONT></FONT></FONT><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(6,'H');</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(4,(Num01+0x30));</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  =
+lang=3Den-US>LCD_VIEW(3,'.');&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(2,(Num1+0x30));</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(1,(Num10+0x30));</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(0,(Num100+0x30));</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>Num1000=3DNum100=3DNum10=3DNum1=3D0; =
+</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while (FrqMn&gt;=3D1000)&nbsp;&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;=20
+  {Num1000++; FrqMn -=3D 1000;}</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while (FrqMn&gt;=3D100)&nbsp;&nbsp;&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  {Num100++;&nbsp; FrqMn -=3D 100;} </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while (FrqMn&gt;=3D10)&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  {Num10++;&nbsp;&nbsp; FrqMn -=3D 10;} </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>while (FrqMn&gt;=3D1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  {Num1++;&nbsp;&nbsp;&nbsp; FrqMn -=3D 1;} </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(15,'M');</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(14,'p');</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(12,(Num1+0x30));</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD_VIEW(11,(Num10+0x30));</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  =
+lang=3Den-US>LCD_VIEW(10,(Num100+0x30));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD</SPAN></FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>_</FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>VIEW</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>(9,=20
+  (</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>Num</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>1000+0</FONT></FONT><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>x</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>30));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;=20
+  </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>FreqOk</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  =
+size=3D2>=3D0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=A7=D0=B0=D1=81=D1=82=D0=BE=D1=82=D0=B0 =
+=D0=BE=D1=82=D0=BE=D0=B1=D1=80=D0=B0=D0=B6=D0=B5=D0=BD=D0=B0. =
+=D0=96=D0=B4=D0=B0=D1=82=D1=8C=20
+  =D0=BD=D0=BE=D0=B2=D0=BE=D0=B9.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>}</FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>DELAY</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>_</FONT></FONT><FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>MS</SPAN></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  =
+(300);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>//</FONT></FONT></FONT><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2>=20
+  </FONT></FONT><FONT color=3D#003366><FONT face=3D"Arial Narrow, =
+sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" =
+size=3D2>=D0=97=D0=B0=D0=B4=D0=B5=D1=80=D0=B6=D0=BA=D0=B0 =
+=D0=B4=D0=BB=D1=8F =
+=D1=87=D0=B8=D1=82=D0=B0=D0=B5=D0=BC=D0=BE=D1=81=D1=82=D0=B8 =
+=D0=BD=D0=B0=20
+  </FONT></FONT></FONT><FONT color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt" =
+size=3D2><SPAN=20
+  lang=3Den-US>LCD</SPAN></FONT></FONT></FONT><FONT =
+color=3D#003366><FONT=20
+  face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: 11pt"=20
+  size=3D2>.</FONT></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2>}</FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>}&nbsp;&nbsp;&nbsp; </FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>/*______________________________________________________</FONT><=
+/FONT>
+  =
+<DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+
+  <DD>&nbsp;<FONT face=3D"Arial Narrow, sans-serif"><FONT =
+style=3D"FONT-SIZE: 11pt"=20
+  size=3D2><SPAN lang=3Den-US>FUNCTIONS</SPAN></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  =
+size=3D2>______________________________________________________*/</FONT><=
+/FONT>
+  <DD>&nbsp;
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>void</SPAN> <SPAN =
+lang=3Den-US>DELAY</SPAN>_<SPAN=20
+  lang=3Den-US>MS</SPAN> (<SPAN lang=3Den-US>int</SPAN> <SPAN=20
+  =
+lang=3Den-US>Xms</SPAN>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;=20
+  <FONT color=3D#003366>//</FONT> <FONT =
+color=3D#003366>=D0=97=D0=B0=D0=B4=D0=B5=D1=80=D0=B6=D0=BA=D0=B0 =
+=D0=BD=D0=B0 </FONT><FONT=20
+  color=3D#003366><SPAN lang=3Den-US>Xms</SPAN></FONT><FONT =
+color=3D#003366>=20
+  =D0=BC=D0=B8=D0=BB=D0=BB=D0=B8=D1=81=D0=B5=D0=BA=D1=83=D0=BD=D0=B4 =
+.</FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>{ </FONT></FONT>
+  <DD>&nbsp;=20
+  =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>long&nbsp;&nbsp;=20
+  DELMS=3D(Xms*(SYS_FREQ/(10*1000))-65);</SPAN></FONT></FONT>
+  =
+<DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  <FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>while (DELMS!=3D0) DELMS--; =
+</SPAN></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>}</FONT></FONT>
+  <DD>&nbsp;
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>#pragma vector=3DINT0_vect</FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2><SPAN lang=3Den-US>__interrupt&nbsp; void=20
+  =
+INT0_INTPT()&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;=20
+  </SPAN><FONT color=3D#003366><SPAN lang=3Den-US>//</SPAN></FONT> <FONT =
+
+  =
+color=3D#003366>=D0=9F=D1=80=D0=B5=D1=80=D1=8B=D0=B2=D0=B0=D0=BD=D0=B8=D0=
+=B5 </FONT><FONT color=3D#003366><SPAN=20
+  lang=3Den-US>INT0.</SPAN></FONT></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>{ </FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>PRD.PRD1[0]=3DTCNT1L;&nbsp;&nbsp;&nbsp; =
+</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>PRD.PRD1[1]=3DTCNT1H;</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>TCNT1H=3D0;</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>TCNT1L=3D0;</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN=20
+  lang=3Den-US>Period=3DPRD.PRD0;</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN =
+lang=3Den-US>FreqOk=3D1;&nbsp;&nbsp;=20
+  </SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN lang=3Den-US>PORTB ^=3D=20
+  (1&lt;&lt;LED);</SPAN></FONT></FONT>
+  <DD>&nbsp;&nbsp;&nbsp; <FONT face=3D"Arial Narrow, sans-serif"><FONT=20
+  style=3D"FONT-SIZE: 11pt" size=3D2><SPAN lang=3Den-US>GIFR |=3D=20
+  (1&lt;&lt;INTF0);</SPAN></FONT></FONT>
+  <DD><FONT face=3D"Arial Narrow, sans-serif"><FONT style=3D"FONT-SIZE: =
+11pt"=20
+  size=3D2>}</FONT></FONT>
+  <DD style=3D"MARGIN-BOTTOM: 0.5cm"><BR><BR></DD></DL></BODY></HTML>

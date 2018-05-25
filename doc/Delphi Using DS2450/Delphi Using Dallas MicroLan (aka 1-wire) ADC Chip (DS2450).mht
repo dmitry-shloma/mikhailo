@@ -1,0 +1,298 @@
+From: =?windows-1251?B?0e718ODt5e3uIFdpbmRvd3MgSW50ZXJuZXQgRXhwbG9yZXIgOQ==?=
+Subject: Delphi: Using Dallas MicroLan (aka 1-wire) ADC Chip (DS2450)
+Date: Tue, 8 Jan 2013 20:20:28 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CDEDDD.99C12620"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CDEDDD.99C12620
+Content-Type: text/html;
+	charset="windows-1251"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://sheepdogguides.com/dt5c.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3.org/TR/html4/loose.dtd"><!--DOCTYPE must be first line of =
+file, and replaces <html>. See plh1fs.htm for more info--><!-- CS Dt5c=0A=
+Rev 15 June 08- Jaza-/r out (search on Jaza (only) for refs to script =
+that hi-jacked=0A=
+Spellchecked not at 15 June 08=0A=
+Validated (validator.w3.org) not at 15 June 08=0A=
++link edit when xfered to SG=0A=
+Spellchecked 26 Dec 01 NOT=0A=
+Dt5c created 26 Dec 01, for AAG Weather Station pcb =
+replacement--><HTML><HEAD>
+<TITLE>Delphi: Using Dallas MicroLan (aka 1-wire) ADC Chip =
+(DS2450)</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1251" =
+http-equiv=3D"Content-Type">
+<META name=3D"description" content=3D"Delphi: Using Dallas MicroLan (aka =
+1-wire) ADC Chip (DS2450)">
+<META name=3D"keywords" content=3D"delphi, tutorial, DS2450, adc, =
+analogue, converter, borland, dallas, microlan, 1-wire, maxim">
+<META name=3D"rating" content=3D"general">
+<META name=3D"GENERATOR" content=3D"MSHTML 9.00.8112.16457"></HEAD>
+<BODY bgColor=3D"#ffffff" text=3D"#000000"><A =
+href=3D"http://www.arunet.co.uk/tkboyd/index2.htm">HOME=20
+</A>- - - - - - -<A href=3D"http://sheepdogguides.com/tut.htm">TUTORIALS =
+INDEX=20
+</A>- - - - - - - - - - - -<A=20
+href=3D"http://www.arunet.co.uk/tkboyd/prgmr1.htm">Other material for=20
+programmers</A>
+<H2>Delphi: Using Dallas MicroLan (aka 1-wire) ADC Chip =
+(DS2450)</H2><!---<<<HTML HEADER ENDS HERE. Edit off to get text of =
+tutorial on own -->
+<H3 align=3D"center">This has good information, and a search button at =
+the bottom=20
+of the page</H3>
+<H4 align=3D"center">Please don't dismiss it because it isn't full of =
+graphics,=20
+scripts, cookies, etc!</H4><A =
+href=3D"http://sheepdogguides.com/tut1ed.htm"=20
+target=3D"_blank">Click here</A> if you want to know more about the =
+source and=20
+format of these pages.<BR><BR>
+<HR>
+This page gives you access to two tutorials on reading the DS2450. One =
+has a=20
+minor flaw which I'm afraid you'll have to find for yourself. The other =
+has=20
+"extra bits" which may be an unwelcome distraction.... or may be useful =
+to your=20
+learning of Delphi. The one with extra bits does have the essentials of =
+reading=20
+the chip set aside in two tidy subroutines. (One to initialize the chip, =
+the=20
+other to read from it.<BR><BR>
+<HR>
+<B>First Option:</B> The one with extra bits may be useful to people =
+with no=20
+interest in programming. It allows you to monitor the voltages on the =
+four=20
+inputs. I wrote the extra bits to give myself a "test instrument" when I =
+was=20
+working with a Dallas wind direction and windspeed sensor (Dallas =
+design, now=20
+AAG badged.) (Available from <A =
+href=3D"http://www.aagelectronica.com/aag/index.html"=20
+target=3D"_blank">AAG..</A> navigate to their weather instrument =
+"TAI8515". $75...=20
+but well worth it... beautifully made, and great design.)<BR><BR>I'll =
+try to=20
+write this up a little better one day, but for now, <A =
+href=3D"http://sheepdogguides.com/ds039.zip">here's=20
+a zip file</A> with the sourcecode, and a copy of the exe file. Note: =
+You have=20
+to create a small file called DS039ini.txt. It has to be created with a =
+simple=20
+text editor, not Word... "Notepad" is fine. (Or you can use Word if you =
+know how=20
+to save your work as a plain text file.) You have to store it in the =
+same folder=20
+as the .exe file. The file should look like....<PRE>aaDS039ini.txt file=0A=
+1 &lt;-1st char determines port where adapter is.=0A=
+5 &lt;-1st char determines adapter type. 5 for U, 1 for E=0A=
+IDA:eb00000001826020</PRE>
+... but you WILL have to change what follows "IDA:" to match the ID of =
+your=20
+DS2450, and, unless you are using the same type of adapter I was using, =
+on the=20
+same port, you'll have to change the entries in the second or third =
+line. No big=20
+deal... I'll help if you need it.<BR><BR>The program writes the things =
+it sees=20
+to a memo. You can pause and resume this logging, and you can use =
+copy/paste to=20
+move those results to other places for further analysis.<BR><BR>The =
+program also=20
+"translates" each reading into "Small", "Medium" or "Large", and you can =
+adjust=20
+the boundaries, i.e. the definitions of those categories. This may not =
+seem very=20
+useful to everyone, but if you are working on a problematic wind =
+direction=20
+sensor it is a great help!<BR><BR>N.B.: The program FETCHES 16 bit =
+numbers from=20
+the ADC, but DISPLAYS them divided by 256.
+<HR>
+<B>Second option:</B> An older tutorial on the DS2450. This particular =
+tutorial=20
+is more than usually sketchy... please don't judge my other tutorials =
+from this.=20
+You will find extensive commentary in the <A =
+href=3D"http://ourworld.compuserve.com/homepages/TK_Boyd/Ds005.zip">sourc=
+e=20
+code.</A> (Click on the "source code" link to download a zip.)<BR><BR>It =
+gives=20
+you almost working software to read the DS2450, a 4 channel analog to =
+digital=20
+converter. There is a little flaw in the program!! I think it was =
+because,=20
+somewhere, I only read one byte instead of two to fetch a cehcksum from =
+the=20
+MicroLan. The code is 99% okay, and "unclttered". It reads channels A, =
+B, and D=20
+properly.<BR><BR>Within the source code, you will find<BR><BR>Function=20
+ConfigureADC, and<BR>Procedure ReadDS2450ADC<BR><BR>The rest of DS005 is =
+just to=20
+call those two items. Around them, you can build your own program to =
+make use of=20
+the DS2450 analogue to digital converter (ADC) chip.<BR><BR>The demo =
+only uses=20
+the chip's ADC features. The chip can also be configured to flag =
+conditions=20
+above or below thresholds set by the user. Any or all of the 4 analogue =
+inputs=20
+can be sacrificed if you would rather use their pins for single bit =
+outputs.
+<BR><BR>A word about a trap I fell into: In the data sheet from Dallas, =
+you are=20
+given help with writing programs for the DS2450. There is frequently a =
+single=20
+line saying "Read CRC". To do this takes TWO calls of TMTouchByte. =
+(Obvious,=20
+when you think about it... but easy to fall into the trap of forgetting =
+that the=20
+CRC is a 16-bit number, and TMTouchByte only reads 8 bits. (Yes... I =
+know... the=20
+name SHOULD have saved me making that mistake of thinking I could fetch =
+the CRC=20
+with one call of TMTouchByte. Isn't programming fun?)<BR>
+<HR>
+For more on the MicroLan and why it's cool, see...<A =
+href=3D"http://www.arunet.co.uk/tkboyd/e1didx.htm">My=20
+guide to MicroLan</A><BR><BR><!-----<<<<HTML FOOTER STARTS HERE>>>> Edit =
+off to get text of tutorial --><!-- -->
+<HR>
+<!-- Search engine: 466.. is SG -->
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>
+      <FORM method=3D"GET" =
+action=3D"http://search.freefind.com/find.html" target=3D"_top">
+      &nbsp;&nbsp;<FONT size=3D"1" face=3D"arial,helvetica"><A =
+href=3D"http://search.freefind.com/find.html?id=3D46682545">
+      Search this site</A>or<A =
+href=3D"http://search.freefind.com/find.html?id=3D46682545&amp;t=3Dw">
+      the web</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; powered by <A =
+href=3D"http://www.freefind.com/">FreeFind</A><BR>
+      <INPUT name=3D"id" value=3D"46682545" type=3D"HIDDEN"><INPUT =
+name=3D"pid" value=3D"r"=20
+      type=3D"HIDDEN"><INPUT name=3D"mode" value=3D"ALL" =
+type=3D"HIDDEN">&nbsp;<INPUT=20
+      name=3D"query" size=3D"20" type=3D"TEXT"><INPUT value=3D" Find! " =
+type=3D"SUBMIT"><INPUT name=3D"sitemap" value=3D"Site Map" =
+type=3D"SUBMIT"><BR>
+      </FONT></FORM></CENTER><FONT size=3D"1" =
+face=3D"arial,helvetica">&nbsp;<INPUT=20
+      name=3D"t" value=3D"s" CHECKED=3D"" type=3D"radio"> Site =
+search<INPUT name=3D"t"=20
+      value=3D"w" type=3D"radio">Web =
+search</FONT></TD></TR></TBODY></TABLE><!--.. and for formless =
+users...-->
+<A =
+href=3D"http://search.freefind.com/find.html?id=3D46682545&amp;m=3D0&amp;=
+p=3D0">Site=20
+Map</A>&nbsp;&nbsp;&nbsp;<A =
+href=3D"http://search.freefind.com/find.html?id=3D46682545&amp;w=3D0&amp;=
+p=3D0">
+What's New</A>&nbsp;&nbsp;&nbsp;<A =
+href=3D"http://search.freefind.com/find.html?id=3D46682545">
+<B>Search</B></A><!-- End Search stuff-->
+<HR>
+<!--Jaza-r scripts removed 6/08 for high-jacking my pages!--><BR><BR><A =
+href=3D"http://top100borland.com/in.php?who=3D606"=20
+target=3D"_blank">Click here</A> if you're feeling kind! (Promotes my =
+site via=20
+"Top100Borland")
+<HR>
+
+<H5> <FONT color=3D"#663333">Ad from page's editor: Yes.. I do enjoy =
+compiling=20
+these things for you... hope they are helpful. However.. this doesn't =
+pay my=20
+bills!!! If you find this stuff useful, (and you run an MS-DOS or =
+Windows pc)=20
+please visit my freeware and shareware page, download something, and =
+circulate=20
+it for me? Links on your page to this page would also be appreciated!
+</FONT></H5><FONT color=3D"#663333"><FONT color=3D"#000000">
+<P align=3D"center"><A =
+href=3D"http://sheepdogguides.com/offers.htm">Click here to=20
+visit editor's freeware, shareware page.</A></P>
+<HR>
+<!-- --><!-----><A href=3D"http://sheepdogguides.com/tut.htm">Link to =
+Tutorials=20
+main page</A>
+<HR>
+<A href=3D"http://sheepdogguides.com/ctact.htm" target=3D"_blank">Here =
+is how</A>=20
+you can contact this page's author, Tom Boyd.<BR><BR>
+<HR>
+
+<P><IMG alt=3D"Valid HTML 4.01 Transitional" =
+src=3D"http://sheepdogguides.com/valid-html401.gif"=20
+width=3D"88" height=3D"31">Page WILL BE tested for compliance with =
+INDUSTRY (not=20
+MS-only) standards, using the free, publicly accessible validator at <A =
+href=3D"http://validator.w3.org/"=20
+target=3D"_blank">validator.w3.org</A></P><BR>If this page causes a =
+script to run,=20
+why? Because of things like Google panels, and the code for the search =
+button.=20
+Why do I mention scripts? Be sure you know all you need to <A =
+href=3D"http://www.arunet.co.uk/tkboyd/spyw.htm"=20
+target=3D"_blank">about spyware</A>.
+<P align=3D"center"><FONT color=3D"#000000">....... P a g e . . . E n d =
+s=20
+.....</FONT></P></FONT></FONT></BODY></HTML>
+
+------=_NextPart_000_0000_01CDEDDD.99C12620
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://sheepdogguides.com/valid-html401.gif
+
+R0lGODlhWAAfAPcAAAAAAAwJBAsLCxENBhYRCBsVCh4YDBQUFBwcHCQdDiwjETEnEzUqFSMjIygo
+KDQzMjs7O0I0Gkc4HE09Hk5LP1dFIltIJGNPJ2xWK29YLHVHOXJbLX5kMU5OTlJPS1ZSTVVVVVxc
+XGpdSmVlZWtra3JrYXBwcHt7ewBanAhfnwlgnw5joRFlohVopBprph5tqCFvqSVyqil1rDF5rzZ9
+sTh+sj6CtEWGtkyLulWRvVqUv12WwGSbw2idxG2hxnSlyXyqzJYEA5kAAJwIBIggGZ02J6AOB7c8
+HqY+KoVqNYltNpN1OpZ4PJ9/P7pCIb9MJqFyU8BOJ8FQKMhfL9BvN9Z6Pdh+P5GHa6OCQa6LRbGN
+RrSBWLaRSLqUSr+YTKOSa7OfZ7umcsScTt6KRc6kUdCmU9arVdquVt6xWOOVSuabTemgUO2pVOO1
+Wua4XOy8XvTDYfnGYv7LZYODg5eXl5iYmKmlnrWtmKysrLS0tL+/v4KuzoWw0Iu00pC31Ja71pi8
+15u+2J/B2qPD26jH3avJ3rLN4bbQ48LCwszMzNTU1MDW58ba6M3f7NPj7t3p8v/sxufn5+zs7OXu
+9enx9u70+PT09PL3+vX4+/7+/szMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAJoALAAAAABYAB8A
+AAj+ABMJHEiwoMGDCBMqXMiQoB1NECEmykSxosWLGDNmhCSno8ePIEOKHCkyzBcRESVqXMlSI0eS
+MGPKNIky5cSWOFu+lMmzZ0eaKTXdzEkU406fSEkCtVm0qcWXcMig6diGDJw4ZLJqdSPHDBmucqJa
+lfPma8ylEYc6LfqSDIAJHTMAyIIGgN27GeQYAMCgYxK7ZOQ0AcDh7MmgNwe9+FGxD4w+FiulSPGi
+8gsYOShamkNCUaY8mCi2fRt3bhwvXhgAaOLljF67YuQUACyYsOGaaSk+QtGi4iEUNSwWQkG8OAog
+mTB1sCtA0QPPmUYrYMIkwlyPEgCY8WiAAAMLWd7+Agg8uDBMtCopykDRqCILFJQq6kCRY9KkQLwt
+ZcIDwMEJCAcIIIloHbl1l11ZYKcddwQMtsAEcpFn23mHMUXRDyjsUdEMKAxSUQsoPJJcDB1S1AEE
+oWUywgkVjTZBHHDIlWBH2W3XUXdxEABAFxHWZp5SFeZG0SIo0EARJcRllgkjKMhAUR/AVXTAUJjo
+R6AcbsElh4wK2qgXAXIsYcGW49VWQRZZxFbSSUIIISRFK8CXiSDErUARECgwRokKKDCiWQMruVja
+jHJk51pHBYDpUY9YHNjXmkS06aZQFuVQoqUcLpLJeprygEIKPlSSXAeBdhQHGm909AYacHjkBhr+
+cXjURhsfrRorHGjkigZYIYVRhKRtUlrRIPRhsoILw/0wCQosUJQDiCjMEBodpSZlrUhIACupWpUw
+awgKPUgmA346WMTIe4Vkgki117YrxxPaBqtWJjVEi4Ihmdxgr4cW9YACDzr1BKO7H8Ebb3oV8UFc
+CqFBSZyoFn0bQ8AehQfAVB7BYYFdE6S6gY4SjBSHE2yEFEW8kwpbUSPE4aAbcTZgNNwLA15kiZU7
+vVFAABd/FN4Gfy0hB3UAhBxSHEcIYYQaBWsbRMoqV/QCCn9UtB5kf5RLkb83IFJzRSSsG51HFkxQ
+Qc8eXQBAqqSRVbRIBgsxRBodnQxsEBoghpH+v5NUhKEjmXj6QyWDvDcIJiFEAnYA0L2UxQBunI1x
+RwkAcGMAHcHxNkhVaDvEGHZLOgQUuCFckSEzWLQIDBRVAmIKxBmZSSIHgBBCAwBQe6UCEzChWhKt
+0ghAqwEsoOrmH42MsuhDbBGk6RRhoqFFyFHkiA8ttMADxJkoAsIBD+DxFOU833WGEnktAQAXbpn3
+BvIghR7vEGqgF/VaOR0lx9m0qiZHG7MBAAG2k527YEEkU0AZ/eRgv3nhj2IeIQMXWiVBVWUBC6nC
+Ehc2yAVegYQKnmMaA593vweyRH8EE4kVRCfCEZauhCZ0SQplMoYhLNAjDYxh/mYoEzW08CdHJHSg
+Do3CQ2vlMA9ITKISl8jEJjLxDmCIohSnSMUqWvGKVrxCCV6YiA548YtgDKMYx0hGCpjxjGhMoxrX
+yMY1fsADDwhKQAAAOw==
+
+------=_NextPart_000_0000_01CDEDDD.99C12620--
